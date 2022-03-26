@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex.css">
+    <title>Pokedex LaunchX</title>
+    
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <h1>pokedexLaunchX</h1>
+            <input type="text" placeholder="Nombre del Pokemon" id="pokename" name="pokename"><br>
+            <img src="./imagenes/pokeball.png" id="pokeImg" alt="pokemon" width="150px"><br>
+        </div>
+        <div class="dOcultar" id="Ocultar">
+            <h2 id="namepoke"></h2><br>
+            <h3 id="nametype"></h3><br>
+            <button class="custom-btn btn-15" onclick="VisibleM()">Movimientos</button>
+            <h3 class="move" id="move"></h3><br>
+            <div id="Stats">
+                <div class="flex">
+                    <div><h3 id="hp"></h3></div> <div><p id="hpstat"></p></div>
+                </div>
+                <div class="flex">
+                    <div><h3 id="atq"></h3></div> <div><p id="atqstat"></p></div>
+                </div>
+                <div class="flex">
+                    <div><h3 id="def"></h3></div> <div><p id="defstat"></p></div>
+                </div>
+                <div class="flex">
+                    <div><h3 id="vel"></h3></div> <div><p id="velstat"></p></div>
+                </div>
+                <div class="flex">
+                    <div><h3 id="atqs"></h3></div> <div><p id="atqsstat"></p></div>
+                </div>
+                <div class="flex">
+                    <div><h3 id="defs"></h3></div> <div><p id="defsstat"></p></div>
+                </div>
+            </div>
+        </div>
+        <button class="custom-btn btn-15" onclick="fetchPokemon(), Visible()">Cambiar Pokemon</button>
+    </div>
+    <footer>
+        <script src="./pokedexLaunchX.js"></script>
+    </footer>
+</body>
+</html>
